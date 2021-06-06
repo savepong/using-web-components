@@ -6,10 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Node + EJS</title>
     <script type="module" src="/scripts/wc-stock-info/wcstockinfo/wcstockinfo.esm.js"></script>
+    <script type="module" src='https://unpkg.com/wc-dev-stats/dist/wc-dev-stats/wc-dev-stats.esm.js'></script>
 </head>
 <body>
     <h1><%= message %></h1>
     <wc-stock-price></wc-stock-price>
     <wc-stock-finder></wc-stock-finder>
+    <github-stats username="savepong"></github-stats>
+    <github-streak-stats username="savepong"></github-streak-stats>
+    <github-top-langs langs-count="5"></github-top-langs>
+    <wakatime-stats username="savepong"></wakatime-stats>
 </body>
 </html>

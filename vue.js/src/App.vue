@@ -3,6 +3,11 @@
     <wc-stock-price></wc-stock-price>
     <wc-stock-finder v-if="showStockFinder"></wc-stock-finder>
     <button @click="showStockFinder = true">Show Finder</button>
+
+    <github-stats username="savepong"></github-stats>
+    <github-streak-stats username="savepong"></github-streak-stats>
+    <github-top-langs langs-count="5"></github-top-langs>
+    <wakatime-stats username="savepong"></wakatime-stats>
   </div>
 </template>
 

@@ -5,6 +5,7 @@ import { AppModule } from "./app/app.module";
 import { environment } from "./environments/environment";
 
 import { defineCustomElements } from "wc-stock-info/loader";
+import { defineCustomElements as devStatsDefineCustomeElements } from "wc-dev-stats/loader";
 
 if (environment.production) {
   enableProdMode();
@@ -15,3 +16,4 @@ platformBrowserDynamic()
   .catch((err) => console.error(err));
 
 defineCustomElements(window);
+devStatsDefineCustomeElements(window);

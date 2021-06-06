@@ -17,6 +17,11 @@ class App extends Component {
         <button onClick={() => this.setState({ showStockFinder: true })}>
           Show Finder
         </button>
+
+        <github-stats username="savepong" />
+        <github-streak-stats username="savepong" />
+        <github-top-langs langs-count="5" />
+        <wakatime-stats username="savepong" />
       </div>
     );
   }

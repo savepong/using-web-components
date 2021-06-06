@@ -5,6 +5,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 import { defineCustomElements } from "wc-stock-info/loader";
+import { defineCustomElements as devStatsDefineCustomElements } from "wc-dev-stats/loader";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
@@ -13,3 +14,4 @@ ReactDOM.render(<App />, document.getElementById("root"));
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
 defineCustomElements(window);
+devStatsDefineCustomElements(window);
